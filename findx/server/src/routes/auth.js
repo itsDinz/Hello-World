@@ -1,5 +1,5 @@
 import express from 'express';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { z } from 'zod';
 import { getDb, generateId, nowIso } from '../db/index.js';
 import { generateToken, requireAuth } from '../middleware/auth.js';
